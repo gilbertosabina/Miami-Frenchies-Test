@@ -1,0 +1,140 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: ARCO;
+}
+.App-openModal {
+  text-align: center;
+  filter:brightness(0.1);
+}
+
+.modal {
+  z-index: 5;
+  width: 60vw;
+  height: 30vw;
+  text-align: center;
+  background-color: #fcceeb;
+  font-family: ARCO;
+  color: black;
+  font-size: 4vw;
+  border-radius: 1vw;
+  position: fixed;
+  padding: 0vw 1vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+
+  button {
+    width:60%;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: black;
+    color: #fcceeb;
+    border-radius: 1vw;
+    cursor: pointer;
+  }
+}
+
+.buy-page {
+  padding-top: 6vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: auto;
+}
+.buy-card {
+  border: 5px solid black;
+  width: 350px;
+  margin: 0 auto 25px auto;
+}
+.buy-img {
+  background-color: #a2fafb;
+  width: 100%;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.buy-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100.5%;
+  margin-left: -1px;
+  font-family: ARCO;
+  font-size: 22px;
+  background-color: white;
+  color: #ff81bc;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.buy-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ARCO;
+  font-size: 22px;
+  width: 100.5%;
+  margin-left: -1px;
+  background-color: #a2fafb;
+  height: 50px;
+  border-bottom: 5px solid black;
+}
+.buy-amount {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ARCO;
+  font-size: 22px;
+  width: 100.5%;
+  margin-left: -1px;
+  background-color: #ff81bc;
+  height: 50px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+.buy-button {
+  border-radius: 5px;
+  background-color: #ff81bc;
+  text-transform: uppercase;
+  color: white;
+  font-family: ARCO;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+  height: 38px;
+  box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    box-shadow: .2vw .2vw 3vw .4vw rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+  }
+}
+

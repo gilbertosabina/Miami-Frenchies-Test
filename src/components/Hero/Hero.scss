@@ -1,0 +1,72 @@
+.hero_background {
+    height: 40.8vw;
+    background-image: url('./../../assets/BACKGROUND_2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7vw;
+    font-family: ARCO;
+    line-height: 7vw;
+
+    @media screen and (max-width: 800px){
+        background-image: url('./../../assets/BACKGROUND_Mobile1.jpg');
+        height: 100vh;
+        padding-top: 0;
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+.hero_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.buttomHome-wrapper{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 800px){
+        margin-top: 40px;
+    }
+  }
+.buttomHome {
+  border-radius: .5vw;
+  background-color: #fcceeb; 
+  color: black;
+  font-size: 2vw;
+  border: .7vw solid transparent;
+  cursor: pointer;
+  line-height: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1vw .5vw -.5vw rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  word-spacing: 3px;
+
+  @media screen and (max-width: 800px){
+      font-size: 25px;
+      padding: 5px;
+      border-radius: 7px;
+  }
+
+  &:hover {
+    box-shadow: .2vw .2vw 3vw .4vw rgba(0, 0, 0, 0.2);
+    background-color: #f7a4d8;
+    transform: scale(1.15);
+  }
+  &:focus {
+    border: .7vw solid transparent;
+    background-color: #f7a4d8;
+    outline: none;
+  }
+  &:active {
+    border: .7vw solid transparent;
+    background-color: #f7a4d8;
+  }
+}

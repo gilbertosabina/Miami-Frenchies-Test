@@ -1,0 +1,22 @@
+.liston {
+    background-color: #292929;
+    border-top: .3vw solid black;
+    border-bottom: .3vw solid black;
+    height: 5vw;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    @media screen and (max-width: 800px) {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: fit-content;
+        font-size: 30px;
+
+        span {
+            margin: 10px 0;
+        }
+    }
+}

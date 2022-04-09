@@ -1,0 +1,84 @@
+
+.about-back {
+    border-top: .1vw solid #add8d2;
+    height: 45vw;
+    background-image: url('./../../assets/BACKGROUND_11.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media screen and (max-width: 800px) {
+        border-top: none;
+        height: fit-content;
+        background-image: url('./../../assets/BACKGROUND_Phone2.jpg');
+    }
+}
+
+.about-card {
+    width: 40vw;
+    height: 30vw;
+    border: .5vw solid black;
+    background-color: white;
+    margin-left: 43vw;
+    margin-top: 3vw;
+
+    @media screen and (max-width: 800px) {
+        margin: 50px 0;
+        width: 80%;
+        height: fit-content;
+        border: 5px solid black;
+    }
+}
+
+.about-title {
+    width: 101%;
+    margin-left: -0.1vw;
+    margin-top: -0.1vw;
+    background-color: #add8d2;
+    height: 5vw;
+    border-bottom: .5vw solid black;
+    border-right: .3vw solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+
+    @media screen and (max-width: 800px) {
+        width: auto;
+        margin-left: 0;
+        margin-top: 0;
+        border-bottom: 5px solid black;
+        border-right: none;
+        font-size: 30px;
+        height: fit-content;
+
+        span {
+            margin: 10px 0;
+        }
+    }
+}
+
+.about-info {
+    padding: 1.5vw 2vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    word-spacing: .5vw;
+    
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        word-spacing: 3px; 
+    }
+}
+
+.badge {
+    width: 20vw; 
+    height: 20vw;
+    margin-top: -10vw;
+    margin-left: 77vw;
+}
